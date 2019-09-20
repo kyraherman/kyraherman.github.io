@@ -2,10 +2,13 @@
 <html>
 <head>
 <title> Create an HTML Table </title>
-
+<style>
+table, th, td {border: 1px solid black; border-collapse: collapse;}
+th, td {padding: 5px;}
+</style>
 </head>
 <body>
-<table style="width:100%; border: 1px solid black">
+<table style="width:100%; border: 1px solid black; border-collapse: collapse">
     <tr>
     <th > Apples </th>
     <th > Bananas </th>
@@ -48,6 +51,43 @@
 <td>123</td>
 <td>123</td>
 </tr>
+</table>
+
+<table>
+<caption> Dogs & Cats As Pets </caption>
+  <thead>
+    <tr>
+      <th>Dogs</th>
+      <th> Cats </th>
+      <th> Total </th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+<td> 3 </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3</td>
+    <td> 5 </td>
+
+    </tr>
+  <tbody>
+<tr>
+<td> 3</td>
+<td> 4 </td>
+<td> 7 </td>
+
+  </tbody>
+  <tfoot>
+    <tr>
+    <th colspan="2"> Total Pets </th>
+      <td> 15</td>
+    </tr>
+  </tfoot>
 </table>
 </body>
 </html>
