@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Multiple Backgrounds</title>
+<style>
+#funny {
+    height: 500px; 
+    width: 700px; 
+background-image: url(hat.png), url(someonesface.jpg),url(tileableseamless2.jpg);
+    background-size: 300px 300px, 550px 350px, 100px 100px;
+     background-position: 300px 20px, right bottom, left top;
+        background-repeat: no-repeat, no-repeat, repeat;}
+#two {
+    height: 500px; 
+    width: 700px; 
+background:url("hat.png") 300px 20px/300px 300px no-repeat, url("someonesface.jpg") right bottom/550px 350px no-repeat, url("tileableseamless2.jpg") left top/100px 100px repeat;
+ }
+
+ html { 
+  background: url(background.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+
+#hero-image {
+  background: url(heroimage.jpg) no-repeat center; 
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+#hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+</style>
+</head>
+<body>
+<div id=funny> </div>
+<div id=two> </div>
+
+<div id="hero-image">
+  <div id="hero-text">
+    <h1 style="font-size:50px">Kyra Herman</h1>
+  </div>
+</div>
+
+</body>
+</html>
